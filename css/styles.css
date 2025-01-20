@@ -127,7 +127,9 @@ header .container{
 .title-back{
     padding: 188px 0px;
     background-color:#2E2F42;
-    
+    background-image: linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url("../images/bg/bg.png");
+    background-size: cover; 
 }
 .title-back .container{
     display: flex;
@@ -177,6 +179,7 @@ header .container{
 .benefits{
     padding: 120px 0px;
 }
+
 .benefit-list{
     display:flex;
     gap:24px;
@@ -186,6 +189,18 @@ header .container{
 }
 .benefits-title{
     margin-bottom: 8px;
+}
+.benefit-list-icon{
+    display: flex;
+    width: 264px;
+    height: 112px;
+    gap: 24px;
+    margin-bottom: 8px;
+    border:2px solid #8e8f99;
+    border-radius: 4px;
+    background-color:#E7E9FC;
+    align-items: center;
+    justify-content: center;
 }
 .strat{
     font-size: 16px;
@@ -224,6 +239,7 @@ header .container{
 }
 .team-info{
     padding: 32px 0px;
+
 }
 .team-name{
     font-weight: 500;
@@ -238,8 +254,29 @@ header .container{
     font-size: 16px;
     letter-spacing: 0.02em;
     text-align: center;
+    margin-bottom: 8px;
 }
-
+.social-media-list {
+    display: flex;
+    justify-content:center;
+    padding: 0 16px;
+    gap: 24px;
+}
+.social-media-link{
+    display: flex;
+    justify-content: center;
+}
+.social-media-item {
+    display: flex;
+    justify-content: center;
+    max-width: 264px;
+}
+.social-media-icon {
+    display:flex;
+    width:40px ;
+    height:40px;
+    background-color: #4D5AE5;
+}
 /*4 Section*/
 
 .portfolio{
@@ -247,7 +284,6 @@ header .container{
 }
 .portfolio-list{
     display: flex;
-    
     flex-wrap: wrap;
     gap: 24px;
     row-gap: 48px;
