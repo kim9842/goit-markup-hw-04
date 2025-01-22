@@ -324,6 +324,7 @@ header .container{
     overflow: hidden;
     box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .portfolio-image{
     position: relative;
@@ -331,6 +332,7 @@ header .container{
 }
 .portfolio-item:hover .overlay{
     transform: translateY(0%);
+    box-shadow:0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .overlay{
     position: absolute;
@@ -383,14 +385,49 @@ header .container{
 .footer{ 
     background-color:#2E2F42;
     padding: 100px 0px;
-}   
-.footer-wrapper{
+} 
+.footer .container{
     display: flex;
     align-items: baseline;
-}
+}  
 .footer-info{
-    margin-right: 120px;
+    margin-right:120px;
 }
+.footer-media-title{
+    font-weight: 500;
+    font-size:16px;;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+	color: #ffffff;
+    margin-bottom: 16px; 
+}
+.footer-media-list {
+    display: flex;
+    gap: 16px;
+}
+.footer-media-item {
+    width: 40px;
+    height: 40px;
+    background-color:250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-media-link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-media-link:hover,
+.footer-media-link:focus{
+    background-color: #31D0AA;
+}
+.footer-media-icon {
+    fill: #f4f4fd;
+}
+
 .footer-logo{
     display: inline-block;
     font-family: "Raleway" ,sans-serif;
@@ -412,43 +449,8 @@ header .container{
     letter-spacing: 0.02em;
     color: #F4F4FD;
 }
-.footer .container {
-	display: flex;
-	align-items:flex-start;
-    gap: 120px;
-}
 
-.footer-media-title {
-    font-weight: 500;
-	margin-bottom: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-	color: #fff;
-    
-}
-.footer-media-list {
-    display: flex;
-    gap: 16px;
-}
-.footer-media-item {
-    width: 40px;
-    height: 40px;
-}
-.footer-media-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background-color: #4D5AE5;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-media-icon {
-    width: 24px;
-    height: 24px;
-}
-.footer-media-link:hover,
-.footer-media-link:focus{
-    background-color: #31D0AA;
-}
+
+
+
+
