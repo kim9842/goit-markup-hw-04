@@ -149,7 +149,7 @@ header .container{
     margin-right: auto;
     background-color:#2E2F42;
     background-size: cover; 
-    background-image: linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),url("../images/bg.png");
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),url("../images/bg-min.jpg");
     background-repeat: no-repeat;
     max-width: 1440px;
     background-position: center;
@@ -201,6 +201,8 @@ header .container{
 }
 
 /*2 Section*/
+
+
 .benefits{
     padding: 120px 0px;
 }
@@ -221,11 +223,15 @@ header .container{
     height: 112px;
     gap: 24px;
     margin-bottom: 8px;
-    border:2px solid #8e8f99;
+    border:1px solid #8e8f99;
     border-radius: 4px;
-    background-color:#E7E9FC;
+    background-color:#f4f4fd;
     align-items: center;
     justify-content: center;
+}
+.benefit-item-icon{
+    width: 64px;
+    height: 64px;
 }
 .strat{
     font-size: 16px;
