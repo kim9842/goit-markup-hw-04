@@ -326,13 +326,13 @@ header .container{
 .portfolio-item{
     position: relative;
     overflow: hidden;
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .portfolio-image{
     position: relative;
     overflow: hidden;
 }
-.portfolio-item:hover{
+.portfolio-item:hover .overlay{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     transform: translateY(0%);
 }
@@ -385,12 +385,19 @@ header .container{
 .
 /* footer start */
 
-.footer{ 
+.footerb{ 
     background-color:#2E2F42;
-    padding: 100px 0px;     
+    padding: 100px 0px;
+}   
+.footer-wrapper{
+    display: flex;
+    align-items: baseline;
+}
+.footer-info{
+    margin-right: 120px;
 }
 .footer-logo{
-    display: inline-block;;
+    display: inline-block;
     font-family: "Raleway" ,sans-serif;
     font-weight: 700;
     font-size: 18px;
