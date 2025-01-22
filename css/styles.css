@@ -229,10 +229,6 @@ header .container{
     align-items: center;
     justify-content: center;
 }
-.benefit-item-icon{
-    width: 64px;
-    height: 64px;
-}
 .strat{
     font-size: 16px;
     letter-spacing: 0.02em;
@@ -326,14 +322,14 @@ header .container{
 .portfolio-item{
     position: relative;
     overflow: hidden;
-    box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-image{
     position: relative;
     overflow: hidden;
 }
 .portfolio-item:hover .overlay{
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     transform: translateY(0%);
 }
 .overlay{
@@ -382,10 +378,9 @@ header .container{
 .categor{
     letter-spacing: 0.02em;
 }
-.
-/* footer start */
 
-.footerb{ 
+/* footer start */
+.footer{ 
     background-color:#2E2F42;
     padding: 100px 0px;
 }   
@@ -409,7 +404,6 @@ header .container{
 }
 .footer-logo-color{
     color: #F4F4FD;
-    padding-left: ;
 }
 .footer-text{
     display: flex;
@@ -427,7 +421,10 @@ header .container{
 .footer-media-title {
     font-weight: 500;
 	margin-bottom: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 	color: #fff;
+    
 }
 .footer-media-list {
     display: flex;
