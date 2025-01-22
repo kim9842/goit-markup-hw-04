@@ -91,15 +91,10 @@ header .container{
     display: flex;
     gap: 40px;
 }
+
 .link{
     color: #2E2F42;
     padding: 24px 0;
-}
-.link::after{
-    /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-}
-.link:focus::after {
-	opacity: 1;
 }
 .link:hover,
 .link:focus{
